@@ -1,0 +1,2 @@
+- name: Install thin-edge.io
+  command: sh -c "curl -fsSL thin-edge.io/install.sh | sh -s"
