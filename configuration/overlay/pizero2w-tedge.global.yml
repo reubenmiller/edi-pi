@@ -1,6 +1,6 @@
 general:
     parameters:
-        mender_device_type: pi02w
+        mender_device_type: pizero2w
 
 bootstrap:
     architecture: arm64
