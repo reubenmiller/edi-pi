@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This identity script returns the MAC address of {{'pi4-v3': 'end0', 'pizero2w': 'wlan0'}[mender_device_type | default("unknown")] | default("eth0") }} as the device identity.
+# This identity script returns the MAC address of {{ {'pi4-v3': 'end0', 'pizero2w': 'wlan0'}[mender_device_type | default("unknown")] | default("eth0") }} as the device identity.
 
 set -ue
 
