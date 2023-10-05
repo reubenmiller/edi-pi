@@ -1,0 +1,2 @@
+- name: Configure Wireless Network
+  command: nmcli connection add type wifi con-name "{{ network_name }}" ssid "{{ network_ssid }}" 802-11-wireless-security.key-mgmt WPA-PSK 802-11-wireless-security.psk '{{ network_psk }}'

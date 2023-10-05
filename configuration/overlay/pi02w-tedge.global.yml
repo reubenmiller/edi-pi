@@ -1,0 +1,21 @@
+general:
+    parameters:
+        mender_device_type: pi02w
+
+bootstrap:
+    architecture: arm64
+
+playbooks:
+    400_development_tools:
+        parameters:
+            install_development_tools: True
+    500_tedge:
+        path: playbooks/tedge/main.yml
+
+    600_wifi:
+        path: playbooks/gitops/main.yml
+
+shared_folders:
+    edi_workspace:
+        folder: edi-workspace
+        mountpoint: edi-workspace

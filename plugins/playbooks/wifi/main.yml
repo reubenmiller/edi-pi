@@ -1,0 +1,12 @@
+- hosts: all
+  gather_facts: no
+
+  vars:
+    network_name: raspberry
+    network_ssid: raspberry
+    network_psk: raspberry
+
+  roles:
+    - role: common
+      become: True
+      become_user: root
