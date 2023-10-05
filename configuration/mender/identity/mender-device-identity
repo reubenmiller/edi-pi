@@ -4,7 +4,7 @@
 
 set -ue
 
-MAC_FILE=/sys/class/net/{{'pi4-v3': 'end0', 'pizero2w': 'wlan0'}[mender_device_type | default("unknown")] | default("eth0") }}/address
+MAC_FILE=/sys/class/net/{{ {'pi4-v3': 'end0', 'pizero2w': 'wlan0'}[mender_device_type | default("unknown")] | default("eth0") }}/address
 
 if [ ! -f "${MAC_FILE}" ]
 then
